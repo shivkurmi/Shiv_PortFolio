@@ -1,0 +1,177 @@
+/* Navbar Base */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  background: #1e1e1e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.image-logo{
+  object-fit: cover;
+  background: transparent;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* Desktop Menu */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00b4ff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu-bar1{
+  position: absolute;
+  padding-top: 20px;
+  background-color: rgb(38, 37, 39);
+  padding-left: 20px;
+  top:0;
+  z-index: 10;
+  color: rgb(114, 110, 110);
+  box-shadow: 5px 5px 10px rgb(94, 90, 90);
+  border-radius: 20px;
+  right: 0;
+  width: 20%;
+  visibility:hidden;
+}
+
+.menu-bar2{
+  padding-top: 20px;
+  position: absolute;
+  background-color: rgb(38, 37, 39);
+  padding-left: 20px;
+  top:0;
+  z-index: 10;
+  color: rgb(114, 110, 110);
+  box-shadow: 5px 5px 10px rgb(94, 90, 90);
+  border-radius: 20px;
+  right: 0;
+  width: 20%;
+  visibility:visible;
+  
+}
+
+ .menu {
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+display: inline-block;
+  
+  padding: 5px 10px;
+  text-align: center;
+  
+}
+.close-menu{
+  text-align: right;
+  font-size: larger;
+  top: 10;
+  padding-right: 20px;
+  right: 20;
+  color: wheat;
+  z-index: 11;
+}
+.close-menu:hover{
+   /* transform: scale(1.2); */
+   color: aquamarine;
+}
+.menu:hover{
+  color: rgb(91, 26, 241);
+}
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Responsive Section */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background: #1e1e1e;
+    width: 60%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    transition: 0.4s ease;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    width: 70%;
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+.menu-bar2{
+  padding-top: 20px;
+  position: absolute;
+  background-color: rgb(38, 37, 39);
+  padding-left: 20px;
+  top:0;
+  z-index: 10;
+  color: rgb(114, 110, 110);
+  box-shadow: 5px 5px 10px rgb(94, 90, 90);
+  border-radius: 20px;
+  right: 0;
+  width: 20%;
+  visibility:hidden;
+  
+}
+}

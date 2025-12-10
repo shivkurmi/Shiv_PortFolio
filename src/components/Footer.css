@@ -1,0 +1,113 @@
+.footer {
+  width: 100%;
+  background: #302a2a;
+  color: white;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+li a{
+  text-decoration: none;
+  color: #f0dddd;
+  font-size: larger;
+}
+
+.footer-subtitle {
+  color: #bbb;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  color: #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-links li:hover {
+  color: white;
+}
+
+.footer-connect {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-socials a {
+  color: #bbb;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: white;
+}
+
+.footer-email {
+  color: #bbb;
+}
+
+.footer-email span {
+  color: white;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  text-align: center;
+  color: #aaa;
+}
+
+/* --- Responsive CSS --- */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;  /* 2 columns */
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;  /* Single column */
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-section.center {
+    align-items: center;
+  }
+}
