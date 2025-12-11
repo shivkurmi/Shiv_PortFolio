@@ -1,5 +1,6 @@
 // import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope, FaGlobe } from "react-icons/fa";
 
 const Footer = () => {
@@ -15,15 +16,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Middle Section */}
-        <div className="footer-section center">
-          <ul className="footer-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/project">Projects</a></li>
-            <li><a href="/About">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
+      
 
         {/* Right Section */}
         <div className="footer-section">

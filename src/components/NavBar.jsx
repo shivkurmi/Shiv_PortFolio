@@ -31,7 +31,7 @@ const NavBar = () => {
    
    
   return (
-    <header>
+    <header className=''>
 
     <nav className="navbar">
       <div className="logo"> <Link to="/" onClick={() => setOpen(false)}> <img className='image-logo' src="https://www.shutterstock.com/image-vector/shiva-logo-design-vector-260nw-2461321365.jpg" alt=""  /> </Link>

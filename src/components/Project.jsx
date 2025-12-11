@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Project.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-// import gsap from "gsap";
-gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Project() {
   const containerRef = useRef(null);
@@ -14,7 +12,7 @@ export default function Project() {
       title: "Portfolio Website",
       desc: "A personal portfolio built with React, GSAP & Three.js",
       img: "https://mir-s3-cdn-cf.behance.net/projects/404/a2f882224632473.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg",
-      link: "#",
+      link: "https://github.com/shivkurmi/Shiv_PortFolio",
     },
     {
       title: "Airbnb Website",
@@ -56,22 +54,7 @@ export default function Project() {
 
   ];
 
-  useGSAP(() => {
-    // const cards = containerRef.current.querySelectorAll(".project-card");
 
-    gsap.from(".project-card1", {
-      opacity: 0,
-      x: -100,
-      duration: 1,
-      stagger: 0.5,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger:".project-card1",
-        start: "top 80%",
-        scrub:true
-      },
-    });
-  });
 
   return (
     <section className="projects-section" id="projects">
@@ -85,7 +68,7 @@ export default function Project() {
 
             <div className="project-info">
              <h2>{project.title} </h2>
-            <p>{project.desc}</p>
+            <p className="des">{project.desc}</p>
              <a href={project.link} className="project-btn" target="_blank" rel="noopener noreferrer">
                View Project
               </a>
